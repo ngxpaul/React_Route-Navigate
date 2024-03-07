@@ -1,6 +1,7 @@
 import HomePage from "./page/Home";
 import RootLayout from "./page/Root";
 import ProductPage from "./page/product";
+import ErrorPage from "./page/ErrorPage";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -11,6 +12,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <RootLayout />,
+    errorElement: <ErrorPage />,
     children: [
       { path: "/", element: <HomePage /> },
       { path: "/product-page", element: <ProductPage /> },
