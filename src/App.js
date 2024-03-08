@@ -9,13 +9,13 @@ import {
 } from "react-router-dom";
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/root",
     element: <RootLayout />,
     errorElement: <ErrorPage />,
     children: [
-      { path: "/", element: <HomePage /> },
-      { path: "/products", element: <ProductPage /> },
-      { path: "/products/:productID", element: <ProductDetailPage /> },
+      { path: "", element: <HomePage /> },
+      { path: "products", element: <ProductPage /> },
+      { path: "products/:productID", element: <ProductDetailPage /> },
     ],
   },
 ]);
