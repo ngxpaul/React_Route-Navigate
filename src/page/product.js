@@ -1,11 +1,13 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 function ProductPage() {
   return (
     <div>
       <h1>Product Page</h1>
-      <p>
-        Click this link<Link to="/"> to approach HomePage</Link>
-      </p>
+      <ul>
+        <li>Product 1</li>
+        <li>Product 2</li>
+        <li>Product 3</li>
+      </ul>
     </div>
   );
 }
